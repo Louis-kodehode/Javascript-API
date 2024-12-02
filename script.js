@@ -31,7 +31,6 @@ async function category(catid, container) {
     rightAnswer.textContent = 0;
     wrongAnswer.textContent = 0;
 
-    
     const categoryQuestion = document.createElement("p");
     categoryQuestion.id = "category-question";
     categoryQuestion.textContent = result.results[0].question;
@@ -40,8 +39,8 @@ async function category(catid, container) {
     const correctAnswer = result.results[0].correct_answer;
     console.log(correctAnswer);
 
-    trueButton.removeEventListener("click", buttonHandler);
-    falseButton.removeEventListener("click", buttonHandler);
+    // trueButton.removeEventListener("click", buttonHandler);
+    // falseButton.removeEventListener("click", buttonHandler);
 
     function buttonHandler(userAnswer) {
       let ans = userAnswer.getAttribute("id");
@@ -56,8 +55,8 @@ async function category(catid, container) {
       }
     }
 
-    trueButton.addEventListener("click", buttonHandler);
-    falseButton.addEventListener("click", buttonHandler);
+    // trueButton.addEventListener("click", buttonHandler);
+    // falseButton.addEventListener("click", buttonHandler);
 
     trueButton.addEventListener("click", function () {
       buttonHandler(trueButton);
