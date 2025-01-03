@@ -39,7 +39,7 @@ body {
 
 #right-answer {
   font-size: 30px;
-  color: rgb(22, 165, 22);
+  color: green;
 }
 
 #wrong-answer {
@@ -48,7 +48,7 @@ body {
 }
 
 .questions-btn {
-  padding: 10px;
+  padding: 20px;
   background-color: lightblue;
   border: 1px solid black;
   border-radius: 20px;
@@ -68,15 +68,17 @@ body {
 }
 
 #button-container {
-  padding: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 20px;
+  padding: 50px;
 }
+
 p {
   font-family: sans-serif;
   font-size: 20px;
-  
+}
+
+.category-buttons {
+  padding: 50px;
+  gap: 50px;
 }
